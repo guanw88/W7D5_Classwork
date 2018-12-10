@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Bench.create([{description: "App Academy Bench No1"}, {lat: 37.7988596}, {lng: -122.4014921}])

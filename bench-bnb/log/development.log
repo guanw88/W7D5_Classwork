@@ -3773,3 +3773,1322 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5433108909077212020)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBenches (20181210192640)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (19.5ms)[0m  [1m[35mCREATE TABLE "benches" ("id" bigserial primary key, "description" character varying NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181210192640_create_benches.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181210192640"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5433108909077212020)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/bin/annotate:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-12-10 11:59:18 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3311619481894043095_70109830761460'
+
+Started POST "/__better_errors/cc61d8cd5d24c371/variables" for 127.0.0.1 at 2018-12-10 11:59:19 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:00:21 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3810236061727875052_70335483140520'
+
+Started POST "/__better_errors/7a7296074ad8e964/variables" for 127.0.0.1 at 2018-12-10 12:00:22 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:04:25 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___1484023012178421379_70339546206820'
+
+Started POST "/__better_errors/7017447b4eb58c8b/variables" for 127.0.0.1 at 2018-12-10 12:04:25 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:04:40 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___1484023012178421379_70339519805820'
+
+Started POST "/__better_errors/6caa9fc7125ae244/variables" for 127.0.0.1 at 2018-12-10 12:04:40 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:04:52 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__2094300599675752824_70165858250360'
+
+Started POST "/__better_errors/6c8f18f3cdf8f916/variables" for 127.0.0.1 at 2018-12-10 12:04:53 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:04:55 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__2094300599675752824_70165840996440'
+
+Started POST "/__better_errors/f2c5c9aa5b8c4ea2/variables" for 127.0.0.1 at 2018-12-10 12:04:55 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:05:08 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+
+
+LoadError - Unable to autoload constant Api::User, expected /Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/models/api/user.rb to define it:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__2094300599675752824_70165860180740'
+
+Started POST "/__better_errors/c3896677261cb036/variables" for 127.0.0.1 at 2018-12-10 12:05:09 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:05:31 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 3.6ms)
+
+
+
+ActiveRecord::StatementInvalid - PG::UndefinedTable: ERROR:  relation "api_users" does not exist
+LINE 8:                WHERE a.attrelid = '"api_users"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"api_users"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__2094300599675752824_70165883436160'
+
+Started POST "/__better_errors/916adbafc11e1160/variables" for 127.0.0.1 at 2018-12-10 12:05:32 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:06:07 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "1isaOaKgoFegUybh6s3Qjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (3.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 1428ms (Views: 1412.8ms | ActiveRecord: 12.1ms)
+
+
+Started DELETE "/api/session" for 127.0.0.1 at 2018-12-10 12:07:05 -0800
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "1isaOaKgoFegUybh6s3Qjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/api/user.rb:42
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "george11"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:42
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "PjG9E3ufANfo8VntGfNFrA"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:42
+  [1m[36mUser Update (1.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "PjG9E3ufANfo8VntGfNFrA"], ["updated_at", "2018-12-10 20:07:05.394684"], ["id", 3]]
+  ↳ app/models/api/user.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/api/user.rb:42
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2018-12-10 12:07:11 -0800
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"george11", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "george11"], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/api/user.rb:42
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "george11"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:42
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "uJ_vR0O9ZWSqN9boWCEJ3w"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:42
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "uJ_vR0O9ZWSqN9boWCEJ3w"], ["updated_at", "2018-12-10 20:07:11.301300"], ["id", 3]]
+  ↳ app/models/api/user.rb:42
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/api/user.rb:42
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (2.6ms)
+Completed 200 OK in 72ms (Views: 11.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:07:13 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "uJ_vR0O9ZWSqN9boWCEJ3w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 92ms (Views: 88.9ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mBench Load (4.2ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBench Create (7.7ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench numero uno"], ["lat", 37.7988596], ["lng", -122.4014921], ["created_at", "2018-12-10 20:25:07.465520"], ["updated_at", "2018-12-10 20:25:07.465520"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBench Load (0.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:24 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169101649940'
+
+Started POST "/__better_errors/cdaeb92b24a8abf2/variables" for 127.0.0.1 at 2018-12-10 12:25:24 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:28 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (20.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169086193500'
+
+Started POST "/__better_errors/8988a622c6a6a3df/variables" for 127.0.0.1 at 2018-12-10 12:25:28 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:29 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169100550940'
+
+Started POST "/__better_errors/fbfc92bc9288c960/variables" for 127.0.0.1 at 2018-12-10 12:25:29 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:30 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169075574940'
+
+Started POST "/__better_errors/229467ce293b8e78/variables" for 127.0.0.1 at 2018-12-10 12:25:30 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:31 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169103549800'
+
+Started POST "/__better_errors/060c701a7e12cd24/variables" for 127.0.0.1 at 2018-12-10 12:25:31 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:32 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169072521140'
+
+Started POST "/__better_errors/324166e028a8f864/variables" for 127.0.0.1 at 2018-12-10 12:25:32 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:33 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169103546080'
+
+Started POST "/__better_errors/aaccd0f059febf23/variables" for 127.0.0.1 at 2018-12-10 12:25:33 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:36 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169100396000'
+
+Started POST "/__better_errors/5dc04d792af2c7df/variables" for 127.0.0.1 at 2018-12-10 12:25:36 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:37 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169072457300'
+
+Started POST "/__better_errors/49c653b7992916a6/variables" for 127.0.0.1 at 2018-12-10 12:25:37 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:41 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169120814820'
+
+Started POST "/__better_errors/a6e02d2de0ca3085/variables" for 127.0.0.1 at 2018-12-10 12:25:41 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:42 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169084709280'
+
+Started POST "/__better_errors/d7e3002104bbb9fd/variables" for 127.0.0.1 at 2018-12-10 12:25:43 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:48 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169080720260'
+
+Started POST "/__better_errors/e2819d1af17de0bb/variables" for 127.0.0.1 at 2018-12-10 12:25:48 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:52 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169101488840'
+
+Started POST "/__better_errors/4087b8f768c51382/variables" for 127.0.0.1 at 2018-12-10 12:25:52 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:25:53 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___2039516578735762076_70169121292620'
+
+Started POST "/__better_errors/a4297cdd7f906283/variables" for 127.0.0.1 at 2018-12-10 12:25:53 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:19 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200856327880'
+
+Started POST "/__better_errors/0cf1b534dfad4c62/variables" for 127.0.0.1 at 2018-12-10 12:26:19 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:21 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200838200520'
+
+Started POST "/__better_errors/a31fe4d479ee1133/variables" for 127.0.0.1 at 2018-12-10 12:26:21 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:22 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200855479860'
+
+Started POST "/__better_errors/64b5690b75e07093/variables" for 127.0.0.1 at 2018-12-10 12:26:22 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:23 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200871668480'
+
+Started POST "/__better_errors/04f07776d5c2eef7/variables" for 127.0.0.1 at 2018-12-10 12:26:24 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:33 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200857239220'
+
+Started POST "/__better_errors/291d67a4f4b9ca32/variables" for 127.0.0.1 at 2018-12-10 12:26:33 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:35 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200838661900'
+
+Started POST "/__better_errors/dfb1b09b28164497/variables" for 127.0.0.1 at 2018-12-10 12:26:35 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:36 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200872904920'
+
+Started POST "/__better_errors/e55a8f46035c5204/variables" for 127.0.0.1 at 2018-12-10 12:26:37 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:42 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200838230960'
+
+Started POST "/__better_errors/f5def1ba22ae06d0/variables" for 127.0.0.1 at 2018-12-10 12:26:43 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:26:50 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200841966180'
+
+Started POST "/__better_errors/57130069036d9a3e/variables" for 127.0.0.1 at 2018-12-10 12:26:51 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:27:03 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200840088060'
+
+Started POST "/__better_errors/c20ddadcb5f18041/variables" for 127.0.0.1 at 2018-12-10 12:27:03 -0800
+Started POST "/__better_errors/c20ddadcb5f18041/eval" for 127.0.0.1 at 2018-12-10 12:27:14 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:27:51 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200827305400'
+
+Started POST "/__better_errors/bdb572dccb0c9436/variables" for 127.0.0.1 at 2018-12-10 12:27:51 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 12:42:23 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__3411221204091074724_70200841753820'
+
+Started POST "/__better_errors/c2f8dc3c58bf156d/variables" for 127.0.0.1 at 2018-12-10 12:42:24 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:28:39 -0800
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355782141500'
+
+Started POST "/__better_errors/c9f0d076b9729a31/variables" for 127.0.0.1 at 2018-12-10 14:28:40 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:30:47 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355776405420'
+
+Started POST "/__better_errors/f866dea120d28cc4/variables" for 127.0.0.1 at 2018-12-10 14:30:47 -0800
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:31:13 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355806179640'
+
+Started POST "/__better_errors/9c1507490e58fb89/variables" for 127.0.0.1 at 2018-12-10 14:31:13 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:31:19 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355775229400'
+
+Started POST "/__better_errors/e4d5354bd664e795/variables" for 127.0.0.1 at 2018-12-10 14:31:20 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:31:28 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355777105500'
+
+Started POST "/__better_errors/cd6c27dd03a7a8b0/variables" for 127.0.0.1 at 2018-12-10 14:31:28 -0800
+Started POST "/__better_errors/cd6c27dd03a7a8b0/eval" for 127.0.0.1 at 2018-12-10 14:31:32 -0800
+Started POST "/__better_errors/cd6c27dd03a7a8b0/eval" for 127.0.0.1 at 2018-12-10 14:31:36 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:32:22 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355775248520'
+
+Started POST "/__better_errors/41f7b6c4999a6497/variables" for 127.0.0.1 at 2018-12-10 14:32:22 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:32:35 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355806182420'
+
+Started POST "/__better_errors/70d6ecf7d804e6bf/variables" for 127.0.0.1 at 2018-12-10 14:32:35 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:32:44 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (41.9ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355829987600'
+
+Started POST "/__better_errors/1deab02669505881/variables" for 127.0.0.1 at 2018-12-10 14:32:45 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:32:46 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355782833700'
+
+Started POST "/__better_errors/896f1ad72b23d878/variables" for 127.0.0.1 at 2018-12-10 14:32:46 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:32:52 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355781950980'
+
+Started POST "/__better_errors/049cc1b209ce53a4/variables" for 127.0.0.1 at 2018-12-10 14:32:52 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:33:24 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___3026127345165663458_70355808229680'
+
+Started POST "/__better_errors/4a6efdc5e9c5c6f9/variables" for 127.0.0.1 at 2018-12-10 14:33:24 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:33:38 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344717646440'
+
+Started POST "/__better_errors/8020e9b774de2feb/variables" for 127.0.0.1 at 2018-12-10 14:33:38 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:33:41 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344702163000'
+
+Started POST "/__better_errors/6bfc85a3143094e2/variables" for 127.0.0.1 at 2018-12-10 14:33:42 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:34:30 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344732099420'
+
+Started POST "/__better_errors/850c0840c08502a5/variables" for 127.0.0.1 at 2018-12-10 14:34:30 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:34:44 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344715684240'
+
+Started POST "/__better_errors/7ce1f7b7fe8abc21/variables" for 127.0.0.1 at 2018-12-10 14:34:44 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:35:05 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344731942400'
+
+Started POST "/__better_errors/97461cca09d850ee/variables" for 127.0.0.1 at 2018-12-10 14:35:06 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:35:08 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344700860600'
+
+Started POST "/__better_errors/1b4c5c3b03f9c549/variables" for 127.0.0.1 at 2018-12-10 14:35:08 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:35:47 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+LoadError - Unable to autoload constant Api::User, expected /Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/models/api/user.rb to define it:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344741081620'
+
+Started POST "/__better_errors/0fdd421e69902849/variables" for 127.0.0.1 at 2018-12-10 14:35:48 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:35:49 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+LoadError - Unable to autoload constant Api::User, expected /Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/models/api/user.rb to define it:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344688454060'
+
+Started POST "/__better_errors/0331bdd484a889db/variables" for 127.0.0.1 at 2018-12-10 14:35:50 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:35:52 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+LoadError - Unable to autoload constant Api::User, expected /Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/models/api/user.rb to define it:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb__558328389874965705_70344737173460'
+
+Started POST "/__better_errors/7e5cae2c29ad7559/variables" for 127.0.0.1 at 2018-12-10 14:35:52 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:36:07 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "uJ_vR0O9ZWSqN9boWCEJ3w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (3.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 1324ms (Views: 1310.3ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:36:26 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "uJ_vR0O9ZWSqN9boWCEJ3w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBench Load (3.6ms)[0m  [1m[34mSELECT  "benches".* FROM "benches" ORDER BY "benches"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBench Create (0.9ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench 2"], ["lat", 37.7988937], ["lng", -122.4014811], ["created_at", "2018-12-10 22:45:33.024150"], ["updated_at", "2018-12-10 22:45:33.024150"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started DELETE "/api/session" for 127.0.0.1 at 2018-12-10 14:46:43 -0800
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "uJ_vR0O9ZWSqN9boWCEJ3w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/api/user.rb:41
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "george11"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:41
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "dvnhgz0hyhjfNwtrNZQeUg"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/api/user.rb:41
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "dvnhgz0hyhjfNwtrNZQeUg"], ["updated_at", "2018-12-10 22:46:43.286951"], ["id", 3]]
+  ↳ app/models/api/user.rb:41
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/api/user.rb:41
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:46:44 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:46:46 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:47:18 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ApplicationController::User:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___1543058854794707102_70333371188740'
+
+Started POST "/__better_errors/b66fc4f6386abffb/variables" for 127.0.0.1 at 2018-12-10 14:47:18 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:47:52 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+
+LoadError - Unable to autoload constant Api::User, expected /Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/models/api/user.rb to define it:
+  app/controllers/application_controller.rb:5:in `current_user'
+  app/controllers/application_controller.rb:9:in `logged_in?'
+  app/views/static_pages/root.html.erb:1:in `_app_views_static_pages_root_html_erb___1543058854794707102_70333341716800'
+
+Started POST "/__better_errors/cf273a7b62a1f2d9/variables" for 127.0.0.1 at 2018-12-10 14:47:52 -0800
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:48:10 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 1181ms (Views: 1171.5ms | ActiveRecord: 7.0ms)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-12-10 14:52:38 -0800
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 1129ms (Views: 1119.5ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/api/session" for 127.0.0.1 at 2018-12-10 14:52:49 -0800
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"george11", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "george11"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:42
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "george11"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "IycHIp5FGGSYlLn-AqU3sQ"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "IycHIp5FGGSYlLn-AqU3sQ"], ["updated_at", "2018-12-10 22:52:49.519213"], ["id", 3]]
+  ↳ app/models/user.rb:42
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:42
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (5.4ms)
+Completed 200 OK in 87ms (Views: 13.4ms | ActiveRecord: 7.7ms)
+
+
+Started DELETE "/api/session" for 127.0.0.1 at 2018-12-10 14:52:59 -0800
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "IycHIp5FGGSYlLn-AqU3sQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:42
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "george11"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "zH0jw3ULFEM83CHa7ZHtlA"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "zH0jw3ULFEM83CHa7ZHtlA"], ["updated_at", "2018-12-10 22:52:59.392115"], ["id", 3]]
+  ↳ app/models/user.rb:42
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:42
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mBench Load (0.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 14:57:30 -0800
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::BenchesController:
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:01:01 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (6.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/views/api/benches/show.json.jbuilder:1:in `_app_views_api_benches_show_json_jbuilder___928031162600183719_70112894701180'
+  app/controllers/api/benches_controller.rb:16:in `index'
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 15:04:20 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 1177ms (Views: 1170.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:04:23 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/show.json.jbuilder
+  [1m[36mBench Load (0.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  ↳ app/views/api/benches/show.json.jbuilder:1
+  Rendered api/benches/show.json.jbuilder (24.2ms)
+Completed 200 OK in 34ms (Views: 25.7ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:05:40 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"description"=>"Bench 3", "lat"=>"37.7988098", "lng"=>"-122.4014172"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: bench:
+  app/controllers/api/benches_controller.rb:24:in `bench_params'
+  app/controllers/api/benches_controller.rb:3:in `create'
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:08:05 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"description"=>"Bench 3", "lat"=>"37.7988098", "lng"=>"-122.4014172"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: bench:
+  app/controllers/api/benches_controller.rb:24:in `bench_params'
+  app/controllers/api/benches_controller.rb:3:in `create'
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:09:19 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"bench"=>{"description"=>"Bench 3", "lat"=>"37.7988098", "lng"=>"-122.4014172"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Create (1.3ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench 3"], ["lat", 37.7988098], ["lng", -122.4014172], ["created_at", "2018-12-10 23:09:19.530845"], ["updated_at", "2018-12-10 23:09:19.530845"]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (1.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.6ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+...w(self); json.extract! @bench :description, :lat, :lng
+...                              ^
+/Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/views/api/benches/show.json.jbuilder:1: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...act! @bench :description, :lat, :lng
+...                              ^:
+  app/views/api/benches/show.json.jbuilder:1:in `'
+  app/controllers/api/benches_controller.rb:6:in `create'
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:10:07 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"bench"=>{"description"=>"Bench 3", "lat"=>"37.7988098", "lng"=>"-122.4014172"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Create (0.4ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench 3"], ["lat", 37.7988098], ["lng", -122.4014172], ["created_at", "2018-12-10 23:10:07.305172"], ["updated_at", "2018-12-10 23:10:07.305172"]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (1.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+...w(self); json.extract! @bench :description, :lat, :lng
+...                              ^
+/Users/guanwang/Desktop/AppAcademy/Classwork/W7D5_Classwork/bench-bnb/app/views/api/benches/show.json.jbuilder:1: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...act! @bench :description, :lat, :lng
+...                              ^:
+  app/views/api/benches/show.json.jbuilder:1:in `'
+  app/controllers/api/benches_controller.rb:6:in `create'
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:10:54 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"bench"=>{"description"=>"Bench 3", "lat"=>"37.7988098", "lng"=>"-122.4014172"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Create (1.0ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench 3"], ["lat", 37.7988098], ["lng", -122.4014172], ["created_at", "2018-12-10 23:10:54.201233"], ["updated_at", "2018-12-10 23:10:54.201233"]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (0.5ms)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:11:03 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (14.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `description' for nil:NilClass:
+  app/views/api/benches/show.json.jbuilder:1:in `_app_views_api_benches_show_json_jbuilder___2180384149428932640_70247867318180'
+  app/controllers/api/benches_controller.rb:16:in `index'
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:11:37 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (3.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `description' for nil:NilClass:
+  app/views/api/benches/show.json.jbuilder:1:in `_app_views_api_benches_show_json_jbuilder___2180384149428932640_70247866916180'
+  app/controllers/api/benches_controller.rb:16:in `index'
+
+Started GET "/" for 127.0.0.1 at 2018-12-10 15:14:02 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:14:04 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.5ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (11.5ms)
+Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:16:24 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"bench"=>{"description"=>"Bench 3", "lat"=>"37.7988645", "lng"=>"-122.4014923"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Create (0.8ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench 3"], ["lat", 37.7988645], ["lng", -122.4014923], ["created_at", "2018-12-10 23:16:24.439669"], ["updated_at", "2018-12-10 23:16:24.439669"]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (1.3ms)
+Completed 200 OK in 24ms (Views: 11.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:16:27 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.6ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (4.9ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mBench Load (2.0ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  [1m[36mBench Destroy (2.0ms)[0m  [1m[31mDELETE FROM "benches" WHERE "benches"."id" = $1[0m  [["id", 4]]
+  [1m[36mBench Destroy (0.7ms)[0m  [1m[31mDELETE FROM "benches" WHERE "benches"."id" = $1[0m  [["id", 5]]
+  [1m[36mBench Load (2.0ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5433108909077212020)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddIndexToBenches (20181210231926)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_benches_on_lat_and_long" ON "benches"  ("lat", "long")[0m
+  ↳ db/migrate/20181210231926_add_index_to_benches.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5433108909077212020)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5433108909077212020)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddIndexToBenches (20181210231926)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_benches_on_lat_and_lng" ON "benches"  ("lat", "lng")[0m
+  ↳ db/migrate/20181210231926_add_index_to_benches.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181210231926"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5433108909077212020)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/bin/annotate:23
+Started GET "/" for 127.0.0.1 at 2018-12-10 15:22:05 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/guanwang/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5
+  Rendered static_pages/root.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 63ms (Views: 55.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:22:08 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (2.0ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (14.4ms)
+Completed 200 OK in 26ms (Views: 15.3ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:22:36 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"bench"=>{"description"=>"Bench Alpha", "lat"=>"37.7988123", "lng"=>"-122.4014324"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "benches" WHERE "benches"."lat" = $1 AND "benches"."lng" = $2 LIMIT $3[0m  [["lat", 37.7988123], ["lng", -122.4014324], ["LIMIT", 1]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Create (1.2ms)[0m  [1m[32mINSERT INTO "benches" ("description", "lat", "lng", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["description", "Bench Alpha"], ["lat", 37.7988123], ["lng", -122.4014324], ["created_at", "2018-12-10 23:22:36.042801"], ["updated_at", "2018-12-10 23:22:36.042801"]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  Rendering api/benches/show.json.jbuilder
+  Rendered api/benches/show.json.jbuilder (0.6ms)
+Completed 200 OK in 20ms (Views: 10.7ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/api/benches" for 127.0.0.1 at 2018-12-10 15:22:39 -0800
+Processing by Api::BenchesController#create as JSON
+  Parameters: {"bench"=>{"description"=>"Bench Alpha", "lat"=>"37.7988123", "lng"=>"-122.4014324"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[36mBench Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "benches" WHERE "benches"."lat" = $1 AND "benches"."lng" = $2 LIMIT $3[0m  [["lat", 37.7988123], ["lng", -122.4014324], ["LIMIT", 1]]
+  ↳ app/controllers/api/benches_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/benches_controller.rb:5
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/benches" for 127.0.0.1 at 2018-12-10 15:22:52 -0800
+Processing by Api::BenchesController#index as JSON
+  Rendering api/benches/index.json.jbuilder
+  [1m[36mBench Load (0.4ms)[0m  [1m[34mSELECT "benches".* FROM "benches"[0m
+  ↳ app/views/api/benches/index.json.jbuilder:1
+  Rendered api/benches/index.json.jbuilder (1.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.4ms)
+
+
