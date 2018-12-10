@@ -1,24 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.handleClick = this.handleClick.bind(this);
-
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       username: "",
       password: ""
     };
   }
 
-  handleClick(e) {
+  handleSubmit(e) {
     e.preventDefault();
     const user = {
       username: this.state.username,
       password: this.state.password
     };
-
     this.props.processForm(user);
   }
 
@@ -29,26 +29,34 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    const headerText = ( this.props.formtype === "signup" ? "Sign Up" : "Log In");
+    const altRegistrationLink = ( this.props.formtype === "signup" ? "/login" : "/signup");
+    const altRegistrationText = ( this.props.formtype === "signup" ? "Log In" : "Sign Up");
+
     return (
-      <form>
-        <label>Username:
-          <input
-            type="text"
-            value={this.state.username}
-            name="username"
-            onChange={this.handleChange} />
-        </label>
+      <div>
+        <h3>{headerText} Form</h3>
+        <Link to={altRegistrationLink}>Click Here To {altRegistrationText}</Link>
+        <form onSubmit={this.handleSubmit}>
+          <label>Username:
+            <input
+              type="text"
+              value={this.state.username}
+              name="username"
+              onChange={this.handleChange} />
+          </label>
 
-        <label>Password:
-          <input
-            type="password"
-            value={this.state.password}
-            name="password"
-            onChange={this.handleChange} />
-        </label>
+          <label>Password:
+            <input
+              type="password"
+              value={this.state.password}
+              name="password"
+              onChange={this.handleChange} />
+          </label>
 
-        <input type="submit"></input>
-      </form>
+          <input type="submit"></input>
+        </form>
+      </div>
     );
   }
 }
