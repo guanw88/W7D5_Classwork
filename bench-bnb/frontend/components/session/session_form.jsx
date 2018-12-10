@@ -28,6 +28,15 @@ class SessionForm extends React.Component {
     });
   }
 
+  renderErrors() {
+    if (this.props.errors && this.props.errors.length !== 0) {
+      const errorStr = this.props.errors.join(", ");
+      return (
+        <p>{errorStr}</p>
+      );
+    }
+  }
+
   render() {
     const headerText = ( this.props.formtype === "signup" ? "Sign Up" : "Log In");
     const altRegistrationLink = ( this.props.formtype === "signup" ? "/login" : "/signup");
@@ -37,6 +46,7 @@ class SessionForm extends React.Component {
       <div>
         <h3>{headerText} Form</h3>
         <Link to={altRegistrationLink}>Click Here To {altRegistrationText}</Link>
+        {this.renderErrors()}
         <form onSubmit={this.handleSubmit}>
           <label>Username:
             <input
